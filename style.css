@@ -15,6 +15,8 @@
   --tt-placeholder: rgba(73, 80, 87, 0.5);
   --tt-button: white;
   --bg-button: #02799D;
+  --bg-error: #F03E3E;
+  --tt-error: white;
 }
 
 body {
