@@ -13,8 +13,10 @@
   --ot-input: #02799D;
   --bd-input: rgba(73, 80, 87, 0.3);
   --tt-placeholder: rgba(73, 80, 87, 0.5);
+
   --tt-button: white;
   --bg-button: #02799D;
+  
   --bg-error: #F03E3E;
   --tt-error: white;
 }
@@ -38,4 +40,18 @@ body {
   margin-inline: auto;
   box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
   border-radius: .6rem;
+}
+
+.title {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+form h1 {
+  margin-bottom: 3.2rem;
+
+}
+
+form input {
+  width: 100%;
 }
