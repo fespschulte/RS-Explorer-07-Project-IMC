@@ -65,9 +65,17 @@ form label {
 form input {
   width: 100%;
   border: 1px solid var(--bd-input);
-  background-color: var(--bg-input);
+  background: var(--bg-input);
   padding: 1.6rem;
   border-radius: .4rem;
+}
+
+form input:focus {
+  outline: 2px solid var(--ot-input);
+}
+
+form input::placeholder {
+  color: var(--tt-placeholder);
 }
 
 .input-wrapper + .input-wrapper {
