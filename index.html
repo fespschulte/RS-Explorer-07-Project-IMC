@@ -15,6 +15,9 @@
   <script src="./main.js" defer></script>
 </head>
 <body>
+  <div class="alert-error">
+    Digite somente números
+  </div>
   <div class="container">
     <main class="card">
       <form action="">
@@ -26,7 +29,7 @@
             type="number"
             placeholder="60"
             >
-          <label for="height">Altura (m)</label>
+          <label for="height">Altura (cm)</label>
           <input 
             id="height" 
             type="number"
@@ -46,7 +49,7 @@
         <button class="close">
           <img src="./assets/close.svg" alt="ícone para fechar a janela">
         </button>
-        Seu IMC é de 28
+        <span></span>
       </h2>
     </div>
   </div>
