@@ -1,4 +1,5 @@
 import { Modal } from "./modal.js"
+import { AlertError } from "./alert-error.js"
 
 // variáveis 
 
@@ -11,11 +12,25 @@ form.onsubmit = function (event) {
 
   const weight = inputWeight.value
   const height = inputHeight.value
+
+  const showAlertError = notNumber(weight) || notNumber(height)
+
+  if(showAlertError) {
+    AlertError.open()
+    return
+  }
+
+  AlertError.close()
+
   const result = IMC (weight, height)
   const message = `O seu IMC é ${result} kg/m²`
   Modal.message.innerText = message
   Modal.open()
 
+}
+
+function notNumber(value) {
+  return isNaN(value) || value == ""
 }
 
 function IMC (weight, height) {
